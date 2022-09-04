@@ -1,18 +1,22 @@
 import React from 'react';
 import '../styles/Pages.css'
+import movie from '../../assets/movie.png';
+import recipe from '../../assets/recipeproject.png';
+import weather from '../../assets/weatherproject.png';
 
 export default function Portfolio() {
   return (
     <div className='cards'>
       <h2>Portfolio</h2>
-      <p>
-        Nunc pharetra finibus est at efficitur. Praesent sed congue diam.
-        Integer gravida dui mauris, ut interdum nunc egestas sed. Aenean sed
-        mollis diam. Nunc aliquet risus ac finibus porta. Nam quis arcu non
-        lectus tincidunt fermentum. Suspendisse aliquet orci porta quam semper
-        imperdiet. Praesent euismod mi justo, faucibus scelerisque risus cursus
-        in. Sed rhoncus mollis diam, sit amet facilisis lectus blandit at.
-      </p>
+     <a href='https://reversedentistry.github.io/Random-Movie-Selector/'>
+      <img src={movie} className='projects'/>
+     </a>
+     <a href='https://group-2-recipe-saver.herokuapp.com/login'>
+      <img src={recipe} className='projects'/>
+     </a>
+     <a href='https://fyerra1.github.io/weather_dashboard-SERVER_SIDE_API/'>
+      <img src={weather} className='projects'/>
+     </a>
     </div>
   );
 }

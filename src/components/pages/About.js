@@ -1,9 +1,10 @@
 import React from 'react';
+import '../../styles/Pages.css'
 
 export default function About() {
   return (
-    <div>
-      <h1>About Me</h1>
+    <div className='cards'>
+      <h2>About Me</h2>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque
         velit, lobortis ut magna varius, blandit rhoncus sem. Morbi lacinia nisi

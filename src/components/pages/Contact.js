@@ -12,22 +12,23 @@ export default function Contact() {
     const inputType = e.target.name;
     const inputValue = e.target.value
 
-    if (currentPage === 'Home') {
-      return <Home />;
+    if (inputType === 'name') {
+      setName(inputValue);
     }
-    if (currentPage === 'About') {
-      return <About />;
+    else if (inputType === 'email') {
+      setEmail(inputValue);
     }
-    if (currentPage === 'Blog') {
-      return <Blog />;
-    }
-    return <Contact />;
+    else setMessage(inputValue);
   }
 
-  // const handleFormSubmit = (e) => {
-  //   e.preventDefault();
-  //   searchMovie(search);
-  // };
+  const handleFormSubmit = (e) => {
+    e.preventDefault();
+    // searchMovie(search);
+
+    setName('');
+    setEmail('');
+    setMessage('');
+  };
 
   return (
 
@@ -35,15 +36,15 @@ export default function Contact() {
     <div className='col-8'>
       <form>
         <div className='py-2'>
-          <input name='name' type="name" className="form-control" placeholder="Enter name" />
+          <input name='name' type="name" onChange={handleInputChange} value={name} className="form-control" placeholder="Enter name" />
         </div>
         <div className='py-2'>
-          <input name='email' type="email" className="form-control" placeholder="Enter email" />
+          <input name='email' type="email" onChange={handleInputChange} value={email} className="form-control" placeholder="Enter email" />
         </div>
         <div className='py-2'>
-          <textarea className="form-control" rows="5" placeholder='Enter message'></textarea>
+          <textarea name='message' className="form-control" onChange={handleInputChange} value={message} rows="5" placeholder='Enter message'></textarea>
         </div>
-        <button type="submit" className="btn btn-primary">Submit</button>
+        <button type="submit" className="btn btn-primary" onClick={handleFormSubmit}>Submit</button>
       </form>
     </div>
   </div>

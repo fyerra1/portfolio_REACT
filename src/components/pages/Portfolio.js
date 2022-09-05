@@ -6,7 +6,7 @@ import weather from '../../assets/weather.png';
 
 export default function Portfolio() {
   return (
-    <div className='column containers'>
+    <div className='portfolio-container mb-4'>
       <h2>Portfolio</h2>
       <div className='cards'>
         <div className='project-containers'>

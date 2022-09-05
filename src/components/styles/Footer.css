@@ -1,0 +1,18 @@
+.list {
+  display:flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  text-align: center;
+  
+}
+
+.button {
+  /* background-color: #607d8b; */
+  color: black;
+  /* border-radius: .5rem; */
+  /* padding: 1%; */
+}
+
+.button:hover {
+  background-color: #607d8b !important;
+}

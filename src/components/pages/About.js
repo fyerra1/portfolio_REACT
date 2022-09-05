@@ -4,7 +4,7 @@ import selfie from '../../assets/headshot.png'
 
 export default function About() {
   return (
-    <div className='about-container my-4'>
+    <div className='about-container mb-4'>
       {/* <h2>About Me</h2> */}
       {/* <img src={selfie} className='selfie'/> */}
       <div className='d-flex flex-row'>

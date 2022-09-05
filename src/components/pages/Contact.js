@@ -32,7 +32,8 @@ export default function Contact() {
 
   return (
 
-    <div className='containers'>
+    <div className='containers mb-4'>
+    <h2>Contact</h2>
     <div className='col-8'>
       <form>
         <div className='py-2'>
@@ -44,7 +45,7 @@ export default function Contact() {
         <div className='py-2'>
           <textarea name='message' className="form-control" onChange={handleInputChange} value={message} rows="5" placeholder='Enter message'></textarea>
         </div>
-        <button type="submit" className="btn btn-primary" onClick={handleFormSubmit}>Submit</button>
+        <button type="submit" className="btn btn-dark" onClick={handleFormSubmit}>Submit</button>
       </form>
     </div>
   </div>

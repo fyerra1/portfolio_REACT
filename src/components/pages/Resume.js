@@ -3,8 +3,8 @@ import '../styles/Pages.css'
 
 export default function Resume() {
   return (
-    <div className='containers'>
-      <h2>Resume</h2>
+    <div className='containers mb-4'>
+      <h2 className='align-text-start'>Resume</h2>
       <div className='align-text-center'>
       <ul>
         <h3>Front-End</h3>

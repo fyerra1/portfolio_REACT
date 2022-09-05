@@ -4,7 +4,7 @@ import selfie from '../../assets/propic.jpg'
 
 export default function About() {
   return (
-    <div className='cards'>
+    <div className='containers'>
       <h2>About Me</h2>
       <div className='d-flex flex-row'>
        <img src={selfie} className='selfie'/>

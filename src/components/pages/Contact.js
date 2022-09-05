@@ -3,7 +3,7 @@ import '../styles/Pages.css'
 
 export default function Contact() {
   return (
-    <div className='cards'>
+    <div className='containers'>
       <h2>Contact Me</h2>
       <p>
         Donec a volutpat quam. Curabitur nec varius justo, sed rutrum ligula.

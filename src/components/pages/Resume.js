@@ -3,7 +3,7 @@ import '../styles/Pages.css'
 
 export default function Resume() {
   return (
-    <div className='cards'>
+    <div className='containers'>
       <h2>Resume</h2>
       <p>
         Integer cursus bibendum sem non pretium. Vestibulum in aliquet sem, quis

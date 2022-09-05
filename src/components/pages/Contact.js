@@ -1,25 +1,40 @@
 import React from 'react';
+import { useState } from 'react';
 import '../styles/Pages.css'
 
 export default function Contact() {
+  
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [message, setMessage] = useState('');
+
+  const handleInputChange = (e) => {
+    const inputType = e.target.name;
+    const inputValue = e.target.value
+  }
+
+  const handleFormSubmit = (e) => {
+    e.preventDefault();
+    searchMovie(search);
+  };
+
   return (
+
     <div className='containers'>
-      <h2>Contact Me</h2>
-      <p>
-        Donec a volutpat quam. Curabitur nec varius justo, sed rutrum ligula.
-        Curabitur pellentesque turpis sit amet eros iaculis, a mollis arcu
-        dictum. Ut vel ante eget massa ornare placerat. Etiam nisl orci, finibus
-        sodales volutpat et, hendrerit ut dolor. Suspendisse porta dictum nunc,
-        sed pretium risus rutrum eget. Nam consequat, ligula in faucibus
-        vestibulum, nisi justo laoreet risus, luctus luctus mi lacus sit amet
-        libero. Class aptent taciti sociosqu ad litora torquent per conubia
-        nostra, per inceptos himenaeos. Mauris pretium condimentum tellus eget
-        lobortis. Interdum et malesuada fames ac ante ipsum primis in faucibus.
-        Donec placerat accumsan mi, ut congue neque placerat eu. Donec nec ipsum
-        in velit pellentesque vehicula sit amet at augue. Maecenas aliquam
-        bibendum congue. Pellentesque semper, lectus non ullamcorper iaculis,
-        est ligula suscipit velit, sed bibendum turpis dui in sapien.
-      </p>
+    <div className='col-8'>
+      <form>
+        <div className='py-2'>
+          <input name='name' type="name" className="form-control" placeholder="Enter name" />
+        </div>
+        <div className='py-2'>
+          <input name='email' type="email" className="form-control" placeholder="Enter email" />
+        </div>
+        <div className='py-2'>
+          <textarea className="form-control" rows="5" placeholder='Enter message'></textarea>
+        </div>
+        <button type="submit" className="btn btn-primary">Submit</button>
+      </form>
     </div>
+  </div>
   );
 }

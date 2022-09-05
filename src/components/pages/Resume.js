@@ -5,19 +5,25 @@ export default function Resume() {
   return (
     <div className='containers'>
       <h2>Resume</h2>
-      <p>
-        Integer cursus bibendum sem non pretium. Vestibulum in aliquet sem, quis
-        molestie urna. Aliquam semper ultrices varius. Aliquam faucibus sit amet
-        magna a ultrices. Aenean pellentesque placerat lacus imperdiet
-        efficitur. In felis nisl, luctus non ante euismod, tincidunt bibendum
-        mi. In a molestie nisl, eu sodales diam. Nam tincidunt lacus quis magna
-        posuere, eget tristique dui dapibus. Maecenas fermentum elementum
-        faucibus. Quisque nec metus vestibulum, egestas massa eu, sollicitudin
-        ipsum. Nulla facilisi. Sed ut erat ligula. Nam tincidunt nunc in nibh
-        dictum ullamcorper. Class aptent taciti sociosqu ad litora torquent per
-        conubia nostra, per inceptos himenaeos. Etiam ornare rutrum felis at
-        rhoncus. Etiam vel condimentum magna, quis tempor nulla.
-      </p>
+      <div className='align-text-center'>
+      <ul>
+        <h3>Front-End</h3>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>Javascript</li>
+          <li>React</li>
+      </ul>
+      <ul>
+          <h3>Back-End</h3>
+            <li>Node</li>
+            <li>Express</li>
+            <li>Javascript</li>
+            <li>APIs</li>
+            <li>SQL</li>
+            <li>MongoDB</li>
+            <li>GraphQL</li>
+      </ul>
+      </div>
     </div>
   );
 }

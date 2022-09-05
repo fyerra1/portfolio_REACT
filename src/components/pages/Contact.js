@@ -11,12 +11,23 @@ export default function Contact() {
   const handleInputChange = (e) => {
     const inputType = e.target.name;
     const inputValue = e.target.value
+
+    if (currentPage === 'Home') {
+      return <Home />;
+    }
+    if (currentPage === 'About') {
+      return <About />;
+    }
+    if (currentPage === 'Blog') {
+      return <Blog />;
+    }
+    return <Contact />;
   }
 
-  const handleFormSubmit = (e) => {
-    e.preventDefault();
-    searchMovie(search);
-  };
+  // const handleFormSubmit = (e) => {
+  //   e.preventDefault();
+  //   searchMovie(search);
+  // };
 
   return (
 

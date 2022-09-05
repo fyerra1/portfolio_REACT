@@ -1,14 +1,37 @@
+body {
+  /* background-color: #607d8b; */
+}
+
+/* #root {
+  background-color: #607d8b;
+} */
+
 .selfie {
+  width: 20rem;
+  height: auto;
+  /* border-radius: 70%; */
+}
+
+.about-container {
+  display: flex;
+  /* align-items: center; */
+  border-radius: 1rem;
+  background-color: #607d8b;
+  box-shadow: 5px 10px 40px;
+  padding: 1rem;
+  margin: 0 4rem;
   width: auto;
-  height: 20rem;
 }
 
 .containers {
+  display: flex;
+  align-items: center;
   border-radius: 1rem;
-  /* background-color: grey; */
+  background-color: #607d8b;
   box-shadow: 5px 10px 40px;
   padding: 1rem;
-  margin: 2rem;
+  margin: 0 4rem;
+  width: auto;
 }
 
 .cards {
@@ -24,6 +47,9 @@
 
 .project-containers {
   /* padding: 1rem; */
+  margin: 1rem;
+  box-shadow: 5px 10px 40px;
+  /* border: 1rem solid black; */
 }
 
 .repos {

@@ -1,14 +1,17 @@
 import React from 'react';
 import '../styles/Pages.css'
-import selfie from '../../assets/propic.jpg'
+import selfie from '../../assets/headshot.png'
 
 export default function About() {
   return (
-    <div className='containers'>
-      <h2>About Me</h2>
+    <div className='about-container my-4'>
+      {/* <h2>About Me</h2> */}
+      {/* <img src={selfie} className='selfie'/> */}
       <div className='d-flex flex-row'>
        <img src={selfie} className='selfie'/>
-       <p className='px-2'>
+       <div className='column'>
+       <h2 className='py-4'>About Me</h2>
+       <p>
          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque
          velit, lobortis ut magna varius, blandit rhoncus sem. Morbi lacinia nisi
          ac dui fermentum, sed luctus urna tincidunt. Etiam ut feugiat ex. Cras
@@ -31,6 +34,7 @@ export default function About() {
          vitae lorem tortor. In elementum ultricies tempus. Interdum et malesuada
          fames ac ante ipsum primis in faucibus.
        </p>
+       </div>
       </div>
     </div>
   );
